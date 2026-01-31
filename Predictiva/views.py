@@ -1,6 +1,7 @@
 from django.shortcuts import render
 
+
 # Create your views here.
-def home_page(request):
+def index(request):
     context = {}
-    return render(request, 'Management/management.html', context)
+    return render(request, "index.html", context)
