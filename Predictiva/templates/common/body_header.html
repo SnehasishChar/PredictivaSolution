@@ -21,9 +21,11 @@
                        {% if request.resolver_match.url_name == 'optimization_solutions' %}class="active"{% endif %}>Optimization
                     Solutions</a>
                 </li>
+                <li><a href="{% url 'team' %}"
+                       {% if request.resolver_match.url_name == 'team' %}class="active"{% endif %}>Team</a>
+                </li>
                 {% comment %}<li><a href="services.html">Services</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="team.html">Team</a></li>
                 <li><a href="blog.html">Blog</a></li>{% endcomment %}
                 {% comment %}<li class="dropdown"><a href="#"><span>Dropdown</span> <i
                         class="bi bi-chevron-down toggle-dropdown"></i></a>

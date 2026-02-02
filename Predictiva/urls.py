@@ -10,4 +10,9 @@ urlpatterns = [
         views.optimization_solutions,
         name="optimization_solutions",
     ),
+    path(
+        "team/",
+        views.team,
+        name="team",
+    ),
 ]

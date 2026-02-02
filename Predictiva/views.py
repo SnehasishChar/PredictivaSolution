@@ -15,3 +15,8 @@ def industry_solutions(request):
 def optimization_solutions(request):
     context = {}
     return render(request, "optimization_solutions.html", context)
+
+
+def team(request):
+    context = {}
+    return render(request, "team.html", context)
