@@ -1,0 +1,226 @@
+{% extends 'common/base.html' %}
+{% load static %}
+
+{% block title %}Industry 4.0 Solutions - Predictiva{% endblock %}
+
+{% block main %}
+    <main class="main">
+
+        <!-- Page Title -->
+        <div class="page-title dark-background">
+            <div class="container position-relative">
+                <h1>Industry 4.0 Solutions</h1>
+                {% comment %}<p>Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda
+                    numquam molestias.</p>{% endcomment %}
+                <nav class="breadcrumbs">
+                    <ol>
+                        <li><a href="{% url 'index' %}">Home</a></li>
+                        <li class="current">Industry 4.0 Solutions</li>
+                    </ol>
+                </nav>
+            </div>
+        </div><!-- End Page Title -->
+
+
+        <!-- Featured Services Section -->
+        <section id="featured-services" class="featured-services section">
+
+            <div class="container">
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-item item-cyan position-relative">
+                            <div class="icon">
+                                <i class="bi bi-file-earmark-spreadsheet-fill"></i>
+                            </div>
+                            <h3>The Digital Foundation: Data Generation & Acquisition</h3>
+                            <p>
+                                You cannot optimize what you cannot measure. The journey to an autonomous, optimized
+                                enterprise begins with reliable, high-fidelity data captured directly from the
+                                source—your physical assets and operations.
+                                At Predictiva AI, we specialize in architecting the secure, robust data pipelines
+                                required for sophisticated AI and optimization engines. We transform the chaotic
+                                environment of the factory floor into a structured, real-time stream of actionable
+                                intelligence.
+
+                            </p>
+                        </div>
+                    </div><!-- End Service Item -->
+                </div>
+
+            </div>
+
+        </section><!-- /Featured Services Section -->
+
+        <!-- Services Section -->
+        <section id="services" class="services section">
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="service-item position-relative">
+                            <div class="img">
+                                <img src="{% static 'assets/img/BackgroundImage/image1.png' %}" class="img-fluid"
+                                     alt="">
+                            </div>
+                            <div class="details">
+                                <h3>Data Generation: Sourcing the Truth</h3>
+                                <p>
+                                    We help you identify and deploy the right hardware to capture essential operational
+                                    parameters. This isn't just about sensors; it is about strategic data mapping to
+                                    unlock specific business values (like OEE or Predictive Maintenance).
+                                </p>
+                                <ul>
+                                    <li>
+                                        <span>
+                                            Sensors & Automation Systems: Integration with existing PLCs, automation systems,
+                                            and new sensor deployments (e.g., vibration, temperature, acoustic sensors)
+                                            to monitor machine health and process variables.
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            Mobile Devices & GPS: Capturing movement data (GPS, acceleration,
+                                            gyroscopes) for logistics tracking and internal asset management.
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            User Inputs: Structuring the capture of crucial qualitative data, meta-data,
+                                            and language-based inputs that provide context missing from machine data alone.
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!-- End Service Item -->
+
+                    <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="service-item position-relative">
+                            <div class="img">
+                                <img src="{% static 'assets/img/BackgroundImage/image2.png' %}" class="img-fluid"
+                                     alt="">
+                            </div>
+                            <div class="details">
+                                <h3>Data Acquisition: Secure & Reliable Transmission</h3>
+                                <p>
+                                    Once generated, data must be moved securely and efficiently. We design the network
+                                    architecture and protocols that ensure data arrives reliably at your data platform.
+                                </p>
+                                <ul>
+                                    <li>
+                                        <span>
+                                            Sensors & Automation Systems: Integration with existing PLCs, automation systems,
+                                            and new sensor deployments (e.g., vibration, temperature, acoustic sensors)
+                                            to monitor machine health and process variables.
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            Mobile Devices & GPS: Capturing movement data (GPS, acceleration,
+                                            gyroscopes) for logistics tracking and internal asset management.
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            User Inputs: Structuring the capture of crucial qualitative data, meta-data,
+                                            and language-based inputs that provide context missing from machine data alone.
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!-- End Service Item -->
+
+                    <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="service-item position-relative">
+                            <div class="img">
+                                <img src="{% static 'assets/img/BackgroundImage/image3.png' %}" class="img-fluid"
+                                     alt="">
+                            </div>
+                            <div class="details">
+                                <h3>Data Analysis and Actionable Insights</h3>
+                                <p>
+                                    Once your data is securely captured and managed, it’s time to unlock its potential.
+                                    At Predictiva AI, our analytics engine moves beyond descriptive reporting ("What
+                                    happened?") into the realm of advanced predictive and prescriptive intelligence
+                                    ("What should we do about it?").
+                                </p>
+                                <ul>
+                                    <li>
+                                        <span>
+                                            Predictive Maintenance: Moving from scheduled downtime to condition-based
+                                            maintenance, optimizing asset lifespan and minimizing operational disruption.
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            OEE (Overall Equipment Effectiveness): Providing real-time, granular
+                                            visibility into performance, availability, and quality to drive continuous
+                                            improvement.
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            Energy Management: Identifying energy drains and prescribing operational
+                                            changes to optimize consumption and reduce utility costs.
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!-- End Service Item -->
+
+                    <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="500">
+                        <div class="service-item position-relative">
+                            <div class="img">
+                                <img src="{% static 'assets/img/BackgroundImage/image4.png' %}" class="img-fluid"
+                                     alt="">
+                            </div>
+                            <div class="details">
+                                <h3>Consulting: A Tailored Approach</h3>
+                                <p>
+                                    Our approach is consultative. We don't just drop off sensors; we work with your team
+                                    to specify the exact requirements for your desired outcomes.
+                                </p>
+                                <ul>
+                                    <li>
+                                        <span>
+                                            Sensors Selection: Guidance on the most cost-effective and reliable sensors
+                                            for specific use cases (e.g., condition monitoring vs. simple tracking).
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            Network Architecture: Designing a resilient network foundation that supports
+                                            high data volumes without disrupting existing operations.
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            Data Acquisition Strategy: A clear roadmap for what data is needed and how
+                                            it will be used to generate your first set of AI-driven insights.
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            Designing the Performance Management Framework : Identifying the right KPIs
+                                            and metrics and incorporating predictive and prescriptive capabilities based
+                                            on metric behavior.
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!-- End Service Item -->
+
+                </div>
+
+            </div>
+
+        </section><!-- /Services Section -->
+    </main>
+{% endblock %}

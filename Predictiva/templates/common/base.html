@@ -1,9 +1,26 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
-{% block header %}
-    {% include 'common/header.html' %}
+<head>
+    {% block header %}
+        <title>{% block title %}Predictiva{% endblock %}</title>
+        {% include 'common/header.html' %}
+    {% endblock %}
+</head>
+<body class="index-page">
+
+{% block body-header %}
+    {% include 'common/body_header.html' %}
 {% endblock %}
-<body>
+
+{% block main %}
+{% endblock %}
+
+{% block footer %}
+    {% include 'common/footer.html' %}
+{% endblock %}
 
 </body>
+
 </html>

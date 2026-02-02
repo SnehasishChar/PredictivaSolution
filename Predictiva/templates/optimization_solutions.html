@@ -1,0 +1,118 @@
+{% extends 'common/base.html' %}
+{% load static %}
+
+{% block title %}Optimization Solutions - Predictiva{% endblock %}
+
+{% block main %}
+    <main class="main">
+
+        <!-- Page Title -->
+        <div class="page-title dark-background">
+            <div class="container position-relative">
+                <h1>Optimization Solutions</h1>
+                <nav class="breadcrumbs">
+                    <ol>
+                        <li><a href="{% url 'index' %}">Home</a></li>
+                        <li class="current">Optimization Solutions</li>
+                    </ol>
+                </nav>
+            </div>
+        </div><!-- End Page Title -->
+
+        <!-- Service Details Section -->
+        <section id="service-details" class="service-details section">
+
+            <div class="container">
+
+                <div class="row gy-5">
+
+                    <div class="col-lg-12 ps-lg-12" data-aos="fade-up" data-aos-delay="200">
+                        <img src="{% static 'assets/img/BackgroundImage/optimization_1360x784.png' %}"
+                             alt="" class="img-fluid">
+                        <h3>
+                            Optimization Solutions: Engineering Peak Performance
+                        </h3>
+                        <p>
+                            In manufacturing and logistics, inefficiency hides in plain sight- in suboptimal schedules,
+                            excessive inventory buffers, and inefficient resource allocation. The difference between
+                            survival and market leadership lies in the mathematical precision of your operations.
+                            At Predictiva AI, we leverage decades of Operations Research (OR) expertise to design and
+                            implement best-in-class optimization solutions that drive significant cost reduction and
+                            productivity improvement.
+                        </p>
+                        <h4>
+                            The Power of Operations Research
+                        </h4>
+                        <p>
+                            We go beyond simple analytics. Operations Research is the application of advanced analytical
+                            methods to make better decisions. Our capability is built on the rigorous science of finding
+                            the absolute best solution among billions of possibilities, translating complex operational
+                            constraints into clear, optimized action plans.
+                        </p>
+                        <h4>
+                            Leveraging Best-in-Class Engines
+                        </h4>
+                        <p>
+                            Our architects are experts in integrating and deploying the industry’s most powerful
+                            optimization solvers. This technical mastery ensures that our solutions are robust,
+                            scalable, and capable of solving your most challenging real-world problems in real-time.
+                            We design solutions leveraging the best in class optimization engines like Gurobi and IBM
+                            iLog, ensuring that your operations benefit from world-class performance and reliability.
+                        </p>
+                        <h4>
+                            Our Optimization Solution Areas
+                        </h4>
+                        <p>
+                            We focus our expertise on the critical pain points that define modern industrial efficiency:
+                        </p>
+                        <h6>
+                            <span>Production Planning & Scheduling</span>
+                        </h6>
+                        <p>
+                            We transform the complex, constrained environment of the shop floor into a perfectly
+                            orchestrated schedule. Our solutions minimize changeover times, maximize throughput,and
+                            ensure on-time delivery by balancing machine capacity, material availability, and labor
+                            constraints simultaneously.
+                        </p>
+                        <h6>
+                            <span>Multi-Echelon Inventory Optimization (MEIO)</span>
+                        </h6>
+                        <p>
+                            Stop guessing at safety stock levels. Our MEIO solutions mathematically determine the
+                            optimal inventory placement across your entire supply chain network—from raw material
+                            suppliers to distribution centers. This approach significantly reduces working capital while
+                            maintaining desired service levels.
+                        </p>
+                        <h6>
+                            <span>Logistics Network & Resource Optimization</span>
+                        </h6>
+                        <p>
+                            We design robust, cost-effective logistics networks that optimize carrier selection,
+                            minimize transportation spend, and ensure efficient resource allocation. We balance inbound
+                            and outbound flows to ensure every asset (truck, warehouse space, labor) is utilized to its
+                            maximum potential.
+                        </p>
+                        <h6>
+                            <span>Carrier Load Building & Volume Optimization</span>
+                        </h6>
+                        <p>
+                            Maximize every cubic foot of capacity. Our optimization engines tackle complex 3D
+                            load-building problems to ensure trailers and containers are packed optimally, reducing
+                            shipping costs and minimizing wasted space.
+                        </p>
+                        <h6>
+                            <span>The Predictiva AI Difference</span>
+                        </h6>
+                        <p>
+                            Our solutions are singularly focused on delivering measurable impact: cost takeout and
+                            productivity improvement. We turn the promise of Operations Research into a tangible
+                            competitive advantage for your business.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section><!-- /Service Details Section -->
+
+    </main>
+{% endblock %}
